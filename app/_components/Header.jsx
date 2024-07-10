@@ -75,6 +75,7 @@ function Header() {
           <PlusIcon className="h-5 w-5" /> Post an Ad
         </Button>
 
+      {/* to display button if signed In */}
         {isSignedIn ? <UserButton /> : <Button variant="outline">Login</Button>}
       </div>
     </div>
