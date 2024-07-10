@@ -1,21 +1,12 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { PlusIcon } from "@radix-ui/react-icons";
-import { Badge } from "components/ui/badge";
 
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+
+
+
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -64,19 +55,22 @@ function Header() {
           <Link href={"/"}>
             {" "}
             <li className="mt-2 hover:text-primary font-medium text-sm cursor-pointer">
-              <Badge>Indoor Maps</Badge>
+              {/* <Badge>Indoor Maps</Badge> */}
             </li>
           </Link>
         </ul>
       </div>
 
       <div className="flex gap-2">
-        <Button className="flex gap-2">
+        {/* <Button className="flex gap-2">
           <PlusIcon className="h-5 w-5" /> Post an Ad
-        </Button>
+        </Button> */}
 
       {/* to display button if signed In */}
-        {isSignedIn ? <UserButton /> : <Button variant="outline">Login</Button>}
+        {isSignedIn ? <UserButton /> : 
+        <h1>Yo made it</h1>
+        // <Button variant="outline">Login</Button>
+        }
       </div>
     </div>
   );
